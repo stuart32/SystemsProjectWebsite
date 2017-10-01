@@ -1,0 +1,246 @@
+@media screen and (min-width: 480px)  {
+	/************************
+	TWO COLUMN LAYOUT: TEAM;
+	************************/
+	
+.person {
+	float: left;
+	white-space: ;
+}
+
+.person li{
+	display: inline-block;
+	float: left;
+}
+
+.profile {
+	
+}
+
+.info {
+	width: 40%;
+	margin: 20px;
+	}
+
+.contact {
+	margin: 30px 0 0 30px;
+}
+
+
+
+
+/************************
+HEADER
+************************/
+nav a, nav a:visited {
+	color: #fff;
+}
+
+
+nav {
+	padding-left: 0;
+	float: right;
+	
+	padding: 2%;
+}
+
+
+#logo {
+	float: left;
+	margin: 1%;
+}
+
+
+
+/***********************
+TWO COLUMN LAYOUT: INDEX
+************************/
+
+
+
+#gallery1 li {
+	float: left;
+	width: 50%;
+}
+
+
+#gallery2 li {
+	float: right;
+	width: 50%;
+	clear: left;
+}
+
+#gallery3 li {
+	float: left;
+	width: 50%;
+	clear: right;
+}
+#banner {
+	background-position: 50% 125px;
+}
+
+
+}
+
+
+
+
+
+
+@media screen and (min-width: 660px){	
+	nav {
+		float: right;
+	}
+
+	body {
+	font-family: "Open Sans",  sans-serif;
+	text-align: center;
+	height: 100%;
+	margin: 0;
+	background: white;
+}
+
+/***********************
+TEAM
+************************/
+
+
+
+/***********************
+THREE COLUMN LAYOUT: INDEX
+************************/
+
+#title {
+	padding-bottom: 200px;
+}
+
+#gallery  {
+	padding-top: 10px;
+}
+
+#gallery1 {
+	float: left;
+	width: 40%;
+	padding: 0 5%;
+	margin: 0%;
+	list-style: none;
+}
+
+#gallery1 li {
+	width: 100%;
+}
+
+#gallery2 {
+	float: left;
+	width: 40%;
+	padding: 0 5%;
+	margin: 0;
+	list-style: none;
+	overflow: auto;
+}
+
+#gallery2 li {
+	width: 100%;
+	margin-top: 0;
+}
+
+#gallery3 {
+	float: right;
+	width: 30%;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	overflow: auto;
+}
+
+#gallery3 li {
+	width: 100%;
+}
+
+#person {
+	width: 100%;
+	padding-left: 20%;
+}
+
+
+
+/*****************
+PAGE: PRODUCT
+******************/
+
+
+
+#product-img1 {
+	width: 20%;
+	float: left;
+	padding: 10px 0%;
+	padding-bottom: 0;
+	margin: 0;
+	height: 500px;
+	background-color: white;
+	padding-left: 15%;
+}
+
+#product-img2 {
+	float: right;
+	width: 20%;
+	padding: 10px 0%;
+	height: 500px;
+	background-color: white;
+	padding-bottom: 0;
+	padding-right: 15%;
+}
+
+
+
+#product-banner {
+	height: 95%;
+	background-position: 0px 125px;
+	z-index: -2;
+
+}
+
+
+#para1 { 
+	width: 30%;
+	float: left;
+	background-color: white;
+	margin: 0;
+	padding: 150px 0%;
+	padding-bottom: 268px;
+	font-family: "Muli", sans-serif;
+	font-size: 1.25em;
+	margin: 0;
+
+
+}
+
+
+.split-section {
+	background-color: white;
+	width: 100%;
+}
+
+
+
+#split-section {
+	width: 100%;
+}
+
+
+#product-banner-low {
+	height: 1200px;
+	background-position: 50% 130px;
+	padding: 0 100%;
+}
+
+
+	
+		
+}
+
+@media screen and (min-width: 800px){	
+#banner {
+	min-height: 300px;
+}
+	}

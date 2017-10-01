@@ -1,0 +1,792 @@
+/*******************
+GENERAL
+*******************/
+/* This attribute centers the middle and footer sections
+-- top/bottom margin is 0, left/right margin is auto(total width of page - 940 
+	is split between left and right margin).
+	#wrapper element changes with browser */
+	#wrapper {
+	max-width: 1050px;
+	margin: 0 auto;
+	padding: 0 5%;
+	background-color: white;
+}
+
+/*removing underline for links and link color*/
+a {
+	text-decoration: none;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	font-family: "Muli",  sans-serif;
+	height: 100%;
+	margin: 0;
+	background: white;
+}
+
+img {
+	max-width: 100%;
+}
+
+h3 {
+	margin: 0 0 1em 0;
+}
+
+.spacer2 {
+	height: 700px;
+}
+
+#infobox {
+	margin-top: 90px;
+}
+
+#title-image {
+	padding-top: 90px;
+}
+
+#image {
+	padding-left: 10%;
+	padding-top: 40px;
+	}
+/*******************
+NAVIGATION
+*******************/
+nav {
+	text-align: center;
+	padding: 0;
+	margin: 0px 0 0;
+	font-family: "Muli", sans-serif;
+	font-size: 1.5em;
+	font-weight: lighter;
+	border: 0;
+
+
+}
+nav li {
+	list-style: none;
+	text-align: center;
+	display: inline-block;
+	padding: 0px 5px;
+}
+
+nav ul {
+	list-style: none;
+	padding: 0;
+	margin: 0 10px;
+}
+
+#buy {
+	font-weight: bolder;
+}
+
+
+
+/*******************
+HEADING
+*******************/
+/*centering logo on page*/
+header {
+	float: left;
+	width: 100%;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	position: fixed;
+	top: 0px;
+	height: 92px;
+	min-height: 70px;
+	z-index: 1;
+}
+
+header ul {
+	list-style: none;
+	margin: 0;
+
+}
+
+
+
+h1 {
+	font-family: "Muli", sans-serif;
+	margin: 15px 0;
+	font-size: 2.25em;
+	font-weight: bold;
+	line-height: 0.8em;
+	text-align: center;
+}
+
+h2 {
+	font-family: "Muli", sans-serif;
+	margin: 15px 0;
+	font-size: 1.75em;
+	font-weight: bold;
+}
+
+h3 {
+	font-family: "Muli", sans-serif;
+	margin: 15px 0;
+	font-size: 1.25em;
+	font-weight: normal;
+	text-align: center;
+}
+
+#banner {
+background-image: url(../pictures/home.jpg);
+background-size: contain;
+background-repeat: no-repeat;
+min-height: 200px;
+background-position: 50% 200px;
+padding-top: 30%;
+height: 400px;
+
+}
+	
+
+/*******************
+SPLITTER
+*******************/
+#split{
+	text-align: center;
+	color: #ABB7B7;
+	clear: both;
+	padding: 10px;
+	
+}
+
+#split ul {
+	list-style: none;
+	display: list-item;
+
+}
+
+
+#split p {
+	color: #929982;
+	
+
+}
+
+#split li h3,#split li h2 {
+	color: white;
+
+}
+
+
+
+
+/*******************
+FOOTER
+*******************/
+footer {
+	font-size: 0.75em;
+	text-align: center;
+	padding: 10px 0;
+	color: #ccc;
+	clear: both;
+	background: #34495E;
+}
+
+footer img {
+	height: 35px;
+}
+
+/*******************
+PAGE: TEAM
+*******************/
+
+.profile-photo {
+	display: block;
+	max-width: 150px;
+	margin: 0 auto 0px;
+	border-radius: 100%;
+	
+}
+
+
+.person {
+	list-style: none;
+}
+
+.person h3 {
+	font-weight: bold;
+}
+
+#team {
+	left: 20%;
+	text-align: center;
+	list-style: none;
+	 
+}
+
+#spacer {
+	width: 100%;
+	height: 100px;
+}
+
+
+
+/*********************
+PAGE: PRODUCT
+**********************/
+	
+#nav2 a, #nav2 a:hover{
+	font-weight: lighter;
+	font-size: 0.75em;
+}
+
+#buy a{
+	font-weight: bolder;
+}
+
+#nav2 ul li a  {
+	color: white;
+	opacity: 1;
+}
+
+#nav2 ul li a.selected {
+	color: #ABB7B7;
+}
+
+
+#nav2 ul li a:hover {
+	color: #E2EDB1;
+}
+
+#nav2 {
+	position: fixed;
+	padding: 0; 
+	margin: 0;
+	width: 100%;
+	z-index: 1;
+	background-color: #929982;
+	top: 70px;
+	float: right;
+	height: 60px;
+	opacity: 0.85;
+	z-index: 0;
+
+}
+
+
+
+
+#product-banner1 {
+background-image: url(../pictures/front-side.png);
+background-attachment: fixed;
+background-size: auto;
+background-repeat: no-repeat;
+background-position: 40% 150px;
+height: 100%;
+
+}
+#product-banner2 {
+background-image: url(../pictures/left-side.png);
+background-attachment: fixed;
+background-size: auto;
+background-repeat: no-repeat;
+background-position: 40% 150px;
+height: 100%;
+
+}
+
+#product-banner3{
+background-image: url(../pictures/back-side.png);
+background-attachment: fixed;
+background-size: auto;
+background-repeat: no-repeat;
+background-position: 55% 150px;
+height: 100%;
+}
+#product-banner4{
+background-image: url(../pictures/right-side.png);
+background-attachment: fixed;
+background-size: auto;
+background-repeat: no-repeat;
+background-position: 55% 150px;
+height: 100%;
+}
+
+
+#product-img1 {
+	height: 400px;
+}
+
+#para1 {
+	font-family: "Muli", sans-serif;
+}
+
+#product-img2 {
+	height: 400px;
+}
+
+.split-section {
+	background: white;
+	z-index: -2;
+	float: left;
+}
+
+.split-section li {
+	float: left;
+	display: inline-block;
+	width: 30%;
+	padding: 0 1%;
+}
+
+#small-split {
+	text-align: center;
+	background-color: #34495E;
+	clear: both;
+	padding: 10px;
+}
+
+#small-split ul {
+	list-style: none;
+	display: list-item;
+
+}
+
+
+#product-banner-low {
+background-image: url(../pictures/TOPFRONTRENDER.bmp);
+background-attachment: fixed;
+background-repeat: no-repeat;
+background-size: initial;
+background-position: 100px 400px;
+z-index: -3;
+
+}
+
+}
+
+
+#dispenser3 {
+	width: 40%;
+}
+/*******************
+PAGE: Software/didital
+*******************/
+#infobox {
+	text-align: left;
+	width: 100%;
+}
+
+#features {
+	list-style: none;
+	padding-top: 5%;
+	text-align: center;
+}
+
+#features li {
+	display: inline-block;
+	width: 30%;
+	padding: 0 1%;
+	vertical-align: middle;
+	font-weight: bolder;
+	text-align: center;
+	color: #34495E;
+}
+
+#section-info {
+	width: 70%;
+	font-size: 1.15em;
+	text-align: center;
+	padding: 20px 15% 0 15%;
+}
+
+#line-split {
+	height: 10px;
+	width: 100%;
+	color: #ABB7B7;
+}
+
+#info-title {
+	font-size: 1.5em;
+	text-align: left;
+	color: #61664C;
+}
+
+#maintenance {
+	list-style: none;
+	padding-bottom: 10px;
+}
+#maintenance li {
+	display: inline-block;
+	width: 40%;
+	float: left;
+	padding: 0 1% 15px 1%;
+}
+
+#maintenance li p {
+	text-align: center; 
+	font-size: 1.12em; 
+}
+
+#maintenance-list {
+	list-style-type: circle;
+	padding-left: 25%
+}
+#maintenance-list li {
+	display: list-item;
+	width: 50%;
+	padding-bottom: 5%; 
+	font-size: 1.12em;
+	font-weight: lighter;
+}
+
+#launguges {
+	list-style: none;
+	padding-bottom: 10px;
+}
+#launguges li {
+	display: inline-block;
+	width: 50%;
+	float: right;
+	
+}
+
+#launguges li p {
+	text-align: center; 
+	padding-right: 20%; 
+	font-size: 1.12em;
+	padding-top: 50px;
+}
+
+#feedback {
+	list-style: none;
+	padding-bottom: 10px;
+}
+#feedback li {
+	display: inline-block;
+	width: 40%;
+	float: left;
+	padding: 0px 1% 15px 2%;
+}
+
+#feedback li p {
+	text-align: center; 
+	font-size: 1.12em; 
+	padding-top: 20px;
+	padding-left: 
+
+}
+
+#modes {
+	list-style: none;
+	padding-bottom: 10px;
+}
+#modes li {
+	display: inline-block;
+	width: 40%;
+	float: left;
+	padding: 0 1% 15px 1%;
+}
+
+#modes li p {
+	text-align: center; 
+	font-size: 1.12em; 
+}
+
+#modes-list {
+	list-style-type: circle;
+	padding-left: 25%
+}
+#modes-list li {
+	display: list-item;
+	width: 50%;
+	padding-bottom: 5%; 
+	font-size: 1.12em;
+	font-weight: lighter;
+}
+
+#modes img {
+	padding-left: 20%;
+}
+
+#servos {
+	list-style: none;
+	padding-bottom: 10px;
+}
+#servos li {
+	display: inline-block;
+	width: 50%;
+	float: right;
+	
+}
+
+#servos li p {
+	text-align: center; 
+	padding-right: 20%; 
+	font-size: 1.12em;
+	padding-top: 80px;
+}
+
+/*******************
+PAGE: dispencer/scanner
+*******************/
+#info1 {
+	list-style: none;
+	padding-bottom: 10px;
+	text-align: center;
+	width: 100%
+}
+#info1 li {
+	display: inline-block;
+	width: 40%;
+	float: left;
+	padding: 0 1% 15px 1%;
+	text-align: center;
+	padding: 1%
+}
+
+#info1 li p {
+	text-align: center; 
+	font-size: 1.1em;
+	padding-top: 50px;
+	
+}
+
+#info1-list {
+	padding: 0;
+	margin: 0;
+	vertical-align: middle;
+
+	}
+#info1-list li {
+	display: inline-block;
+	font-size: 0.8em;
+	font-weight: lighter;
+	padding-top: 2%;
+	margin: 0;
+
+}
+
+#info1-list img
+ {
+	height: 70px;
+}
+
+
+
+
+
+
+
+.info2 {
+	background: white;
+	z-index: -2;
+	float: left;
+}
+
+.info2 li:nth-child(even) {
+	float: left;
+	display: inline-block;
+	width: 50%;
+	padding: 0 1%;
+	text-align: center;
+}
+.info2 li {
+	float: left;
+	display: inline-block;
+	width: 20%;
+	padding: 1% 1%;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.info2 p {
+	padding-top: 30px;
+}
+
+}
+#info3 {
+	list-style: none;
+	padding-bottom: 10px;
+	text-align: center;
+	width: 100%;
+	padding: 1%;
+}
+#info3 li {
+	display: inline-block;
+	width: 45%;
+	float: right;
+	padding: 0 0 15px 0;
+	text-align: center;
+	
+}
+
+#info3 li p {
+	text-align: center; 
+	font-size: 1.12em;
+	padding-left: 0;
+	padding-right: 20%;
+}
+
+#info3-list {
+	padding: 0;
+	margin: 0;
+	vertical-align: middle;
+	padding-right: 30%;
+
+	}
+#info3-list li {
+	display: inline-block;
+	font-size: 0.8em;
+	font-weight: lighter;
+	padding: 1%;
+	margin: 0;
+	float: left;
+}
+
+#info3-list li p {
+	padding-right: 10%;
+}
+
+#info3-list img
+ {
+	height: 70px;
+	padding: 0;
+}
+
+/*******************
+PAGE: INDEX
+*******************/
+
+#gallery1 {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#gallery2 {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#gallery3 {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+
+#label {
+	margin: 0;
+	padding: 5%;
+	font-size: 0.75em;
+	color: #317C7A;
+}
+
+#label:hover {
+		color: #24B77F;
+}
+
+
+#textbox {
+	margin: 0;
+	padding: 20px 20px;
+	font-family: "Muli", sans-serif;
+	font-weight: lighter;
+	font-size: 1em;
+	color: black;
+}
+
+#gallery {
+	text-align: center;
+}
+
+
+
+/*******************
+Buy
+*******************/
+#buy1 {
+	padding-top: 100px;
+}
+
+#buy1 li {
+	display: inline-block;
+	width: 40%;
+	vertical-align: top;
+	}
+
+#buy-list {
+	list-style: none;
+}
+#buy-list li {
+	display: list-item;
+	width: 100%;
+
+}
+
+#buy-contact li{
+	display: inline-block;
+	width: 20%;
+	vertical-align: middle;
+	padding: 20px 0;
+
+}
+
+
+/*******************
+COLOURS
+*******************/
+
+
+header {
+	background: #34495E;
+}
+
+
+header h2 {
+	color: #fff;
+}
+
+/* Nav background on mobile devises*/
+
+
+
+/*darkens color of selected nav item*/
+nav ul li a.selected {
+	color: #929982;
+}
+
+/* Nav link color after clicked*/
+nav a, nav a:visited {
+	color: white;
+}
+
+/* Nav Link when color when hovered over*/
+nav ul li a:hover {
+	color: #E2EDB1;
+}
+
+#split h3{
+	color: black;
+}
+
+#nav2 a {
+	color: black;
+
+}
+
+#split {
+	background-color: #34495E;
+}
+#split-low {
+	background-color: #34495E;
+}
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<!-- saved from url=(0068)http://137.195.15.99/~srf32/gp/GroupProject/index.php/role_select/21 -->
+<html class=" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style>#datetimepicker5{z-index:1500 !important;}</style>
+
+	
+	<link rel="stylesheet" type="text/css" href="./s_files/mystyle.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="./s_files/bootstrap.min.css">
+	<link rel="stylesheet" href="./s_files/dataTables.bootstrap.min.css">
+	<link rel="stylesheet" href="./s_files/w3.css">
+	<script src="./s_files/jquery.min.js"></script>
+	<script src="./s_files/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="./s_files/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="./s_files/style.css"> <!-- Resource style -->
+	<link rel="stylesheet" href="./s_files/style.scss"> <!-- Resource style -->
+	<script src="./s_files/modernizr.js"></script> <!-- Modernizr -->
+	<script src="./s_files/main.js"></script> <!-- Main JS -->
+	<script src="./s_files/jquery-ui.js"></script>
+	<script src="./s_files/jquery-1.12.4.js"></script>
+	<script src="./s_files/jquery.dataTables.min.js"></script>
+	<script src="./s_files/dataTables.bootstrap.min.js"></script>
+	<link rel="stylesheet" href="./s_files/jquery-ui.css">
+	
+
+	<title>Select Roles</title>
+	<script type="text/javascript">
+		var sessionTimeout = 1800 ; 
+			
+		function DisplaySessionTimeout()
+		{
+			//assigning minutes left to session timeout to Label
+				$("#timeDiv").show();
+			sessionTimeout = sessionTimeout - 1 ;
+			
+			//if session is not less than 0
+			if (sessionTimeout >= 5){
+				$("#time").text(sessionTimeout); //call the function again after 1 minute delay
+					setTimeout(DisplaySessionTimeout,1000);
+				}
+			else
+			{
+				//show message box
+				if(sessionTimeout == 4) {alert("Your current Session is nearly over.");}
+				if(sessionTimeout == 0) {window.location.href = 'http://137.195.15.99/~srf32/gp/GroupProject/index.php/login';}
+				$("#time").text(sessionTimeout); //call the function again after 1 minute delay
+					setTimeout(DisplaySessionTimeout,1000);
+			}
+		}	
+	</script>
+</head> 
+<body onload="if(1){DisplaySessionTimeout();}">
+  <div class="buttons"></div>
+    <button type="button" onclick="location.href=&#39;http://137.195.15.99/~srf32/gp/GroupProject/index.php/profile&#39;;" class="btn btn-info">
+      <span class="glyphicon glyphicon-user"></span> Profile
+    </button>
+    <button type="button" onclick="" class="btn btn-info ">
+      <span class="glyphicon glyphicon-calendar"></span> Calendar
+    </button>
+      
+  
+  <div id="timeDiv" style="">
+		<label id="SessionTimeLb" style="float:left;">SessionTime: </label>
+		<p id="time">1782</p>
+	</div>
+<div class="page-header">
+  <h4>User Account </h4>
+</div>
+  <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="http://137.195.15.99/~srf32/gp/GroupProject/index.php/role_select/21#">PlanWise</a>
+    </div>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="http://137.195.15.99/~srf32/gp/GroupProject/index.php/role_select/21#">Home</a></li>
+      <li class="active"><a href="http://137.195.15.99/~srf32/gp/GroupProject/index.php/role_select/21#">My Account</a></li>
+      <li><a href="http://137.195.15.99/~srf32/gp/GroupProject/index.php/role_select/create_project">Create Project</a></li>
+      <li><a href="http://askooner1996.wixsite.com/planwise">Company</a></li>
+      <li><a href="http://137.195.15.99/~srf32/gp/GroupProject/index.php/role_select/21#" data-toggle="modal" data-target="#myModal">Log Out</a></li>
+    </ul>
+  </div></nav>
+  
+  
+<!--start of modal for logout-->
+
+<div class="container">
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">×</button>
+          <h4 class="modal-title">Are you sure you want to quit ?</h4>
+        </div>
+        <div class="modal-body">
+          
+          
+         <section class="lougout" id="panel">
+  <div class="container">
+      <div class="col-sm-2" style="padding-right:0px; margin-top:5px; padding-top:15px; margin-left:-20px; ">
+        <div class="row">
+			<form action="http://137.195.15.99/~srf32/gp/GroupProject/index.php/role_select/logout">
+				<button type="submit" class="btn btn-default search-btn ">Yes</button>
+			</form>
+        </div>
+      </div>
+            <div class="row">
+      <div class="col-sm-3" style="padding-right:15px; margin-top:5px; padding-top:15px;">
+          <button type="submit" class="btn btn-default search-btn">No</button>
+        </div>
+  </div>
+  </div>
+</section>
+  </div>
+        </div>
+        </div>
+        </div>
+        </div>
+
+	<div id="timeDiv" style="display:none; ">
+		<label id="SessionTimeLb" style="float:left;">SessionTime: </label>
+		<p id="time"></p>
+	</div>
+	
+                
+             
+<section>
+<div class="container">
+<h1>Role Selection</h1>
+<br>
+<br>
+<style type="text/css">
+
+.list-group-item.active {
+	background-color: #ABB7B7;
+	border-color: #ABB7B7;
+}
+
+li .active {
+	background-color: orange;
+}
+
+</style>
+
+	<section class="col-md-3">
+
+		<h1>Tasks</h1>
+		<br>
+		
+
+		 <!--<div class="col-sm-6 col-md-3 list-group">-->
+			  <a href="http://137.195.15.99/~srf32/gp/GroupProject/index.php/role_select/21#" class="list-group-item active">FirstTask</a>
+			  
+			<!--</div>-->
+
+
+	</section>
+	 
+	
+	<section class="col-md-9" style="background-color: #ABB7B7;">
+
+		<div class="col-md-12">
+
+			<nav aria-label="...">
+ 			 <ul class="pagination">
+ 			 	<!--
+   			 	<li class="disabled"><a href="#" aria-label="Previous"><span aria-hidden="true"> << </span></a></li> -->
+
+   			 	
+			   				<li class="active"><a href="http://137.195.15.99/~srf32/gp/GroupProject/index.php/role_select/21#">FIrst Role <span class="sr-only">(current)</span></a></li>
+
+			   									<li class="disabled"><a href="http://137.195.15.99/~srf32/gp/GroupProject/index.php/role_select/21#">FIrst Role<span class="sr-only"></span></a></li>
+														<li class="disabled"><a href="http://137.195.15.99/~srf32/gp/GroupProject/index.php/role_select/21#">Second Role<span class="sr-only"></span></a></li>
+							
+   				   			
+   				<!--<li class="disabled"><a href="#" aria-label="Next"><span aria-hidden="true">>> </span></a></li> -->
+ 			 </ul>
+			</nav>
+
+		
+			<h1>Selected Staff:</h1>
+			<p>Please select employees for each role.</p>
+			<br>
+				<div class="row">
+
+				  <div class="col-sm-6 col-md-4">
+				    <div class="thumbnail">
+				      <div class="caption">
+				        <h2>Employee Name</h2>
+				        <h3>Employee Position</h3>
+				        <ul>
+				        	<li>Skill 1</li>
+				        	<li>Skill 2</li>
+				        	<li>Skill 3</li>
+				        </ul>
+				        <p><a href="http://137.195.15.99/~srf32/gp/GroupProject/index.php/role_select/21#" class="btn btn-danger btn-xs" role="button">Remove</a> </p>
+				      </div>
+				    </div>
+				  </div>
+
+				  <div class="col-sm-6 col-md-4">
+				    <div class="thumbnail">
+				      <div class="caption">
+				        <h2>Employee Name</h2>
+				        <h3>Employee Position</h3>
+				        <ul>
+				        	<li>Skill 1</li>
+				        	<li>Skill 2</li>
+				        	<li>Skill 3</li>
+				        </ul>
+				        <p><a href="http://137.195.15.99/~srf32/gp/GroupProject/index.php/role_select/21#" class="btn btn-danger btn-xs" role="button">Remove</a> </p>
+				      </div>
+				    </div>
+				  </div>
+
+				  <div class="col-sm-6 col-md-4">
+				    <div class="thumbnail">
+				      <div class="caption">
+				        <h2>Employee Name</h2>
+				        <h3>Employee Position</h3>
+				        <ul>
+				        	<li>Skill 1</li>
+				        	<li>Skill 2</li>
+				        	<li>Skill 3</li>
+				        </ul>
+				        <p><a href="http://137.195.15.99/~srf32/gp/GroupProject/index.php/role_select/21#" class="btn btn-danger btn-xs" role="button">Remove</a> </p>
+				      </div>
+				    </div>
+				  </div>
+			</div>
+				<br>
+		
+
+				<h1>Matching staff for role</h1>
+
+				<br>
+				<div class="bs-example">
+    <table class="table table-border" style="background-color: white; ">
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+                <td>Position</td>
+                <td>Skill Level</td>
+                <td>  </td>
+
+            </tr>
+        </thead>
+        <tbody>
+        	<!--
+        	        		
+            <tr>
+                
+                <td>
+<div style="border:1px solid #990000;padding-left:20px;margin:0 0 10px 0;">
+
+<h4>A PHP Error was encountered</h4>
+
+<p>Severity: Notice</p>
+<p>Message:  Undefined index: firstname</p>
+<p>Filename: project/role_select.php</p>
+<p>Line Number: 165</p>
+
+
+	<p>Backtrace:</p>
+	
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: /home/ce3/srf32/public_html/gp/GroupProject/application/views/pages/project/role_select.php<br />
+			Line: 165<br />
+			Function: _error_handler			</p>
+
+		
+	
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: /home/ce3/srf32/public_html/gp/GroupProject/application/controllers/Page_functions.php<br />
+			Line: 416<br />
+			Function: view			</p>
+
+		
+	
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: /home/ce3/srf32/public_html/gp/GroupProject/index.php<br />
+			Line: 315<br />
+			Function: require_once			</p>
+
+		
+	
+
+</div></td>
+                <td>
+<div style="border:1px solid #990000;padding-left:20px;margin:0 0 10px 0;">
+
+<h4>A PHP Error was encountered</h4>
+
+<p>Severity: Notice</p>
+<p>Message:  Undefined index: lastname</p>
+<p>Filename: project/role_select.php</p>
+<p>Line Number: 166</p>
+
+
+	<p>Backtrace:</p>
+	
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: /home/ce3/srf32/public_html/gp/GroupProject/application/views/pages/project/role_select.php<br />
+			Line: 166<br />
+			Function: _error_handler			</p>
+
+		
+	
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: /home/ce3/srf32/public_html/gp/GroupProject/application/controllers/Page_functions.php<br />
+			Line: 416<br />
+			Function: view			</p>
+
+		
+	
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: /home/ce3/srf32/public_html/gp/GroupProject/index.php<br />
+			Line: 315<br />
+			Function: require_once			</p>
+
+		
+	
+
+</div></td>
+                <td>
+<div style="border:1px solid #990000;padding-left:20px;margin:0 0 10px 0;">
+
+<h4>A PHP Error was encountered</h4>
+
+<p>Severity: Notice</p>
+<p>Message:  Undefined index: email</p>
+<p>Filename: project/role_select.php</p>
+<p>Line Number: 167</p>
+
+
+	<p>Backtrace:</p>
+	
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: /home/ce3/srf32/public_html/gp/GroupProject/application/views/pages/project/role_select.php<br />
+			Line: 167<br />
+			Function: _error_handler			</p>
+
+		
+	
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: /home/ce3/srf32/public_html/gp/GroupProject/application/controllers/Page_functions.php<br />
+			Line: 416<br />
+			Function: view			</p>
+
+		
+	
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: /home/ce3/srf32/public_html/gp/GroupProject/index.php<br />
+			Line: 315<br />
+			Function: require_once			</p>
+
+		
+	
+
+</div></td>
+                <td>Software Engineer</td>
+                <td>
+<div style="border:1px solid #990000;padding-left:20px;margin:0 0 10px 0;">
+
+<h4>A PHP Error was encountered</h4>
+
+<p>Severity: Notice</p>
+<p>Message:  Undefined index: level</p>
+<p>Filename: project/role_select.php</p>
+<p>Line Number: 169</p>
+
+
+	<p>Backtrace:</p>
+	
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: /home/ce3/srf32/public_html/gp/GroupProject/application/views/pages/project/role_select.php<br />
+			Line: 169<br />
+			Function: _error_handler			</p>
+
+		
+	
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: /home/ce3/srf32/public_html/gp/GroupProject/application/controllers/Page_functions.php<br />
+			Line: 416<br />
+			Function: view			</p>
+
+		
+	
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: /home/ce3/srf32/public_html/gp/GroupProject/index.php<br />
+			Line: 315<br />
+			Function: require_once			</p>
+
+		
+	
+
+</div> </td>
+                <td><button id="submit" name="submit" type="submit" class="btn btn-success btn-xs">Add to role</button></td>
+            </tr>
+
+                  -->
+          
+            <tr>
+                
+                <td>Peter</td>
+                <td>Parker</td>
+                <td>peterparker@mail.com</td>
+                 <td>Software Engineer</td>
+                <td> 5 Years </td>
+                <td><button id="submit" name="submit" type="submit" class="btn btn-success btn-xs">Add to role</button></td>
+            </tr>
+            <tr>
+                
+                <td>John</td>
+                <td>Rambo</td>
+                <td>johnrambo@mail.com</td>
+                 <td>Software Engineer</td>
+                <td> 5 Years </td>
+                <td><button id="submit" name="submit" type="submit" class="btn btn-success btn-xs">Add to role</button></td>
+            </tr>
+            <tr>
+                
+                <td>John</td>
+                <td>Carter</td>
+                <td>johncarter@mail.com</td>
+                <td>Software Engineer</td>
+                <td> 5 Years </td>
+                <td><button id="submit" name="submit" type="submit" class="btn btn-success btn-xs">Add to role</button></td>
+            </tr>
+            <tr>
+                
+                <td>Peter</td>
+                <td>Parker</td>
+                <td>peterparker@mail.com</td>
+                 <td>Software Engineer</td>
+                <td> 5 Years </td>
+                <td><button id="submit" name="submit" type="submit" class="btn btn-success btn-xs">Add to role</button></td>
+            </tr>
+            <tr>
+                
+                <td>John</td>
+                <td>Rambo</td>
+                <td>johnrambo@mail.com</td>
+                 <td>Software Engineer</td>
+                <td> 5 Years </td>
+                <td><button id="submit" name="submit" type="submit" class="btn btn-success btn-xs">Add to role</button></td>
+            </tr>
+        
+        </tbody>
+    </table>
+</div>
+
+			
+				
+
+					<!-- Button -->
+					<div class="form-group">
+					  <div class="col-md-9 control-label">
+						<button id="nextRole" name="submit" type="submit" class="btn btn-primary btn-lg">Next Role</button>
+					  </div>
+					</div>
+
+					<script>
+ 					$('#myButton').on('click', function () {
+  					  var $btn = $(this).button('loading')
+  					      				$btn.button('reset')
+  })
+</script>
+
+
+		</div>
+
+		
+
+
+
+
+	</section>
+		
+
+</div></section>
+				
+				
+				                <em>© 2015 PlanWise</em>
+        
+</body></html>
