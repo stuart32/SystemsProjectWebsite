@@ -1,8 +1,6 @@
+# SystemsProjectWebsite
 
-hello from macs change
+A website I created for my third year systems project to display information ab$
 
-This is the GitHub repository for the 3rd year Systems Project - group 5
-# SytemsProjectWebsite
-# SystemsProjectWebsite
-# SystemsProjectWebsite
-# SystemsProjectWebsite
+Can be seen at this link:
+http://www2.macs.hw.ac.uk/~srf32/SysProj/ElementWebsite/index.html
